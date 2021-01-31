@@ -3,9 +3,9 @@ markdown:         kramdown
 highlighter:      rouge
 
 # Setup
-title:            Hydeout
-tagline:          'A Jekyll theme'
-description:      'The <a href="http://hyde.getpoole.com" target="_blank">Hyde</a> theme for <a href="http://jekyllrb.com" target="_blank">Jekyll</a>, refreshed.'
+title:            Jillian Etheredge
+tagline:          'An exploration into data science'
+description:      'This blog will cover data science topics as I learn about them through Metis and beyond'
 url:              https://fongandrew.github.io
 baseurl:          /
                   # the optional subpath of your site, e.g. "/blog"
@@ -15,8 +15,8 @@ baseurl:          /
                   # sidebar_blog_link below.
 
 author:
-  name:           'Andrew Fong'
-  url:            https://twitter.com/fongandrewc
+  name:           'Jillian Etheredge'
+  url:            https://www.linkedin.com/in/jillian-etheredge-357127163/
 
 paginate:         5
 # paginate_path:    '/page:num'
