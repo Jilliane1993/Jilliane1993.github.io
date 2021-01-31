@@ -11,7 +11,7 @@ title:            Jillian Etheredge
 tagline:          'An Exploration of Data Science'
 description:      'A blog dedicated to my exploration of data science concepts from my time at Metis and beyond'
 url:              http://Jilliane1993.github.io
-baseurl:          /
+baseurl:          '/hyde'
 
 author:
   name:           'Jillian Etheredge'
