@@ -37,7 +37,7 @@ title: Predicting Response to a Bank Telemarketing Campaign
 <p>After tuning hyperparameters and testing different methods to combat class imabalance with the various models the CatBoost Classifier preformed the best. While Catboost was not a model covered by Metis I became interested in it as a potential model for this project as it natively handles categorical features without one hot encoding preprocessing.</p> 
 <p>I used ROC AUC score, the model's confusion matrix, and f1 macro score as my metrics to gauge performance. While the CatBoost had the highest ROC AUC score, its f1 macro and accuracy scores were very similiar or even lower than some of the other models; however it had a higher percentage of true positive results while maintaining a lower rate of false positives than other models.</p>
 ![ROC Curve and ROC AUC Score Comparison](/Images/ROC_Curves.svg)
-![Catboost Confusion Matrix](/Images/cat_boost_confusion_matrix.svg)
+![Catboost Confusion Matrix](/Images/catboost_confusion_matrix.svg)
 <p>I used a correlation heatmap to infer the directionality of feature importance for this model.</p>
 ![Correlation to signing up for a deposit](/Images/deposit_correlation.svg)
 ![Catboost Feature Importances](/Images/catboost_feature_importance_modified.svg)
