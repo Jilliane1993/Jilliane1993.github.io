@@ -5,7 +5,7 @@ highlighter:      rouge
 # Setup
 title:            Jillian Etheredge
 tagline:          'An exploration into data science'
-description:      'This blog will cover data science topics as I learn about them through Metis and beyond'
+description:      'This blog will cover data science topics as I learn about them through the “12-week Metis Data Science Bootcamp” and beyond'
 url:              https://fongandrew.github.io
 baseurl:          /
                   # the optional subpath of your site, e.g. "/blog"
