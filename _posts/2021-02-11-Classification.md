@@ -3,7 +3,7 @@ layout: post
 title: Predicting Response to a Bank Telemarketing Campaign
 ---
 
-<p>My third project at Metis used supervised machine learning algorithms to predict if a potential bank client would sign up for a term deposit account using ![this UCI dataset](https://archive.ics.uci.edu/ml/datasets/Bank+Marketing). By predicting which clients are more likely to sign-up and focusing efforts on those clients there is the potential to increase campaign success rates. </p>
+My third project at Metis used supervised machine learning algorithms to predict if a potential bank client would sign up for a term deposit account using [this UCI dataset](https://archive.ics.uci.edu/ml/datasets/Bank+Marketing). By predicting which clients are more likely to sign-up and focusing efforts on those clients there is the potential to increase campaign success rates.
 
 ## Models compared:
 
