@@ -8,5 +8,5 @@ I'm Jillian Etheredge soon to be graduate from Metis's 12 week Data Science Boot
 
 I'm currently looking for employment if you interested in potentially hiring me here are a few links you may find useful:
 
-Want to see my code for yourself?  [Here's my GitHub](https://github.com/Jilliane1993?tab=repositories)
-Want to see my resume?  [Here's my Linkedin](www.linkedin.com/in/jillian-etheredge)
+Want to see my code for yourself?  [Here's my GitHub](https://github.com/Jilliane1993)
+Want to see my resume?  [Here's my Linkedin](https://www.linkedin.com/in/jillian-etheredge/)
