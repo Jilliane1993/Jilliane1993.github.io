@@ -27,9 +27,9 @@ Each season of images has an accompanying json file that image annotations, whil
 
 I standardized the image sizes for training, and while google cloud platform did provide access to more RAM and more powerful gpus than available with my local machine these helpful resources are not infinite and I still had to train in batches to avoid running out a memory. To create my model I implemented transfer learning techniques using Resnet50 starting point that was pretrained using the ImageNet database of over a million images, some of which were animals. Due to the noises of the images used; varying lighting and weather conditions, only partial images of animals, motion blurring, and so on, I thought a deeper neural network may be more effective than one with fewer layers. However deeper neural networks can encounter vanishing gradient problem, as the gradient becomes smaller and smaller the wights and biases from the intial layers are not effectively updated with each training session. This is why I chose Resnet50 as it is a residual network using residual connections between layers preventing the vanishging gradient problem.  To evaluate performance  I focused on F1 Macro score, due to imbalance noticed earlier I wanted to show perfomance on those smaller classes, and validation loss, this model uses the categorical cross entropy loss fuction which penalizes the model the more confident it is in incorrect labeling. Fast.ai's inbuilt learning rate finding function was particularly helpful during the training of my model as it showed at what learning rates the los was at its smallest. To avoid potentially losing work as a saftey precaution I saved a copy of the model after every epoch during training. I first trained with frozen layers and as preformance began to plateau I continued training with unfrozen layers stopping model training when perfomance plateaued again.
 
-![Initial validation sample](Images/stage_3_validation_sample.png)
+![Initial validation sample](/Images/stage_3_validation_sample.png)
 
-![inital top losses](Images/stage_3_top_losses.png)
+![inital top losses](/Images/stage_3_top_losses.png)
 
 ## Evaluating Perfomance and Additional Training
 
@@ -37,11 +37,11 @@ At this point the model has a validation loss score of 0.29 and an F1 Score of 0
 
 Given the short time period this project was initially due in I did not have a particularly time efficent way to address the issue of single labels on multi-species images so I instead focused on the mislabeling related to image sequences. I created a new version of the test dataset that only used the first frame from each image sequence set under the assumption the first image was most likely the one labeled correctly. I then went on to fine tune my model using this version of the dataset, I used the same seed for the train validation split as I had previously in the hopes of reducing data bleed as much as possible. This halved the validation loss and increased the F1 Score to 0.79, while many of the issues that were present with the original dataset are still present in this version they appear to be less frequent. Overall it appears that the model is more confident in its correct labeling and less confident in its incorrect ones while overall performances is still somewhat stiffled by problems with the dataset itself.
 
-![Fine tuned Results](Images/fined_tuned_validation_sample.png)
+![Fine tuned Results](/Images/fined_tuned_validation_sample.png)
 
-![Fine Tuned Losses](Images/fine_tune_top_losses.png)
+![Fine Tuned Losses](/Images/fine_tune_top_losses.png)
 
-![Validation sample confusion Matrix](Images/giant_confusion_matrix.png)
+![Validation sample confusion Matrix](/Images/giant_confusion_matrix.png)
 
 This confusion matrix of a subsection of the validation set further reinforces the idea that the model fails the most when labeling images as empty when the dataset says they are not empty and mislabeling species that congregate together. 
 
